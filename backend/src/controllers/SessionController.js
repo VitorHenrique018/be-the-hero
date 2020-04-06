@@ -5,7 +5,7 @@ module.exports = {
        const { id } = request.body;
 
        //buscar a ong do bd
-const ong = await connection('ongs')
+    const ong = await connection('ongs')
     //esse 'id' é igual ao id de cima { id } 
     .where('id', id)
     //retorna apenas o nome
